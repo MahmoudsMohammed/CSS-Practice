@@ -1,0 +1,66 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  padding-left: calc(20rem / 16);
+  padding-right: calc(20rem / 16);
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Large Devices, Wide Screens */
+@media (min-width: calc(1200rem / 16)) {
+  .container {
+    width: calc(720rem / 16);
+  }
+}
+
+/* Medium Devices, Desktops */
+@media (min-width: calc(992px / 16)) {
+  .container {
+    width: calc(960rem / 16);
+  }
+}
+
+/* Small Devices, Tablets */
+@media (min-width: calc(768px / 16)) {
+  .container {
+    width: calc(1140rem / 16);
+  }
+}
+
+:root {
+  --first-assignment: calc(5rem / 16);
+}
+
+/* Classes and Frequent Styling */
+
+/* First Assignment */
+.elzero-lines {
+  width: calc(500rem / 16);
+  height: calc(100rem / 16);
+  margin: calc(50rem / 16) auto;
+  display: grid;
+  place-items: center;
+  position: relative;
+  background-color: white;
+}
+.elzero-lines::after,
+.elzero-lines::before {
+  content: '';
+  position: absolute;
+}
+.elzero-lines::after {
+  width: calc(100% + var(--first-assignment) * 2);
+  height: calc(100% + var(--first-assignment) * 2);
+  background-color: red;
+  border: var(--first-assignment) solid blue;
+  z-index: -1;
+}
+.elzero-lines::before {
+  width: calc(100% + var(--first-assignment) * 6);
+  height: calc(100% + var(--first-assignment) * 6);
+  background-color: green;
+  border: var(--first-assignment) solid black;
+  z-index: -2;
+}
+/* Second Assignment */
