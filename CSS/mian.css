@@ -1,3 +1,31 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+.container {
+  padding-left: calc(20rem / 16);
+  padding-right: calc(20rem / 16);
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Large Devices, Wide Screens */
+@media (min-width: calc(1200rem / 16)) {
+  .container {
+    width: calc(720rem / 16);
+  }
+}
+
+/* Medium Devices, Desktops */
+@media (min-width: calc(992px / 16)) {
+  .container {
+    width: calc(960rem / 16);
+  }
+}
+
+/* Small Devices, Tablets */
+@media (min-width: calc(768px / 16)) {
+  .container {
+    width: calc(1140rem / 16);
+  }
+}
+
+/* frequent style and Classes  */
